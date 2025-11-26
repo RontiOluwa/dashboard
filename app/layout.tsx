@@ -1,13 +1,13 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Sidebar from '@/components/layout/Sidebar';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Sidebar from "@/components/layout/Sidebar";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Pagrin - Driver Incentives Dashboard',
-  description: 'Manage instant cashout rewards and driver perks',
+  title: "Pagrin - Projects Incentives Dashboard",
+  description: "Manage instant cashout rewards and project perks",
 };
 
 export default function RootLayout({
@@ -21,9 +21,7 @@ export default function RootLayout({
         <div className="flex h-screen overflow-hidden">
           <Sidebar />
           <div className="flex flex-1 flex-col overflow-hidden lg:pl-64">
-            <main className="flex-1 overflow-y-auto">
-              {children}
-            </main>
+            <main className="flex-1 overflow-y-auto">{children}</main>
           </div>
         </div>
       </body>

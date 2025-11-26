@@ -19,7 +19,7 @@ export default async function CampaignsPage() {
       {/* Header */}
       <Header
         title="Campaigns"
-        desc=" Manage cashout bonuses, referral programs, and driver incentives"
+        desc=" Manage cashout bonuses, referral programs, and Project incentives"
       />
       <div className="mb-8">
         {/* Summary Cards */}
