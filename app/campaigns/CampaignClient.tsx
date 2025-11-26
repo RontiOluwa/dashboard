@@ -56,6 +56,7 @@ export default function CampaignsClient({ campaigns }: CampaignsClientProps) {
                 value={filters.search}
                 className="block w-full p-4 rounded-md border-gray-300 pl-10 focus:border-pagrin-500 focus:ring-pagrin-500 sm:text-sm"
                 func={searchFilter}
+                id="search"
               />
             </div>
           </div>
@@ -68,6 +69,7 @@ export default function CampaignsClient({ campaigns }: CampaignsClientProps) {
               items={["all", "active", "scheduled", "completed", "paused"]}
               className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 sm:text-sm"
               func={statusFilter}
+              id={"status"}
             />
           </div>
 
@@ -85,6 +87,7 @@ export default function CampaignsClient({ campaigns }: CampaignsClientProps) {
               ]}
               className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 sm:text-sm"
               func={typeFilter}
+              id="type"
             />
           </div>
         </div>

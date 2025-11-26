@@ -5,14 +5,24 @@ interface InputProps {
   placeholder: string;
   className: string;
   value: string;
-  func: (value: string) => void
+  func: (value: string) => void;
+  id: string;
 }
 
-function Input({ type, placeholder, className, value, func }: InputProps) {
+function Input({ type, placeholder, className, value, func, id }: InputProps) {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     func(e.target.value);
   };
-  return <input type={type} placeholder={placeholder} value={value} className={className} onChange={handleInputChange} />;
+  return (
+    <input
+      type={type}
+      placeholder={placeholder}
+      value={value}
+      className={className}
+      onChange={handleInputChange}
+      id={id}
+    />
+  );
 }
 
 export default Input;
