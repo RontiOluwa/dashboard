@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Search, DollarSign } from "lucide-react";
 import { Redemption } from "@/lib/types";
+import dynamic from "next/dynamic";
 import FieldLabel from "@/components/layout/FieldLabel";
 import Input from "@/components/ui/Input";
 import Select from "@/components/ui/Select";
 import { filterRedemptions } from "@/lib/data";
 import { redemptions as allRedemptions } from "@/lib/data";
-import RedemptionTable from "./RedemptionTable";
+
+const RedemptionTable = dynamic(() => import("./RedemptionTable"), {
+  loading: () => <p>Loading...</p>,
+});
 
 function Redemptions() {
   const [filters, setFilters] = useState({

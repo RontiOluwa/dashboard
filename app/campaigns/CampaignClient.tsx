@@ -3,11 +3,15 @@
 import { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import { Campaign } from "@/lib/types";
+import dynamic from "next/dynamic";
 import { filterCampaigns } from "@/lib/data";
 import FieldLabel from "@/components/layout/FieldLabel";
 import Input from "@/components/ui/Input";
 import Select from "@/components/ui/Select";
-import CampaignTable from "./CampaignTable";
+
+const CampaignTable = dynamic(() => import("./CampaignTable"), {
+  loading: () => <p>Loading...</p>,
+});
 
 interface CampaignsClientProps {
   campaigns: Campaign[];
