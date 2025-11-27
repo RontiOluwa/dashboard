@@ -98,7 +98,7 @@ export default function Sidebar() {
           <div className="shrink-0 border-t border-gray-800 p-4">
             <div className="text-xs text-gray-400">
               <div className="font-medium text-white">Incentives Dashboard</div>
-              <div className="mt-1">Manage driver rewards & perks</div>
+              <div className="mt-1">Manage project rewards & perks</div>
             </div>
           </div>
         </div>

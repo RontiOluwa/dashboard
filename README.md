@@ -1,6 +1,6 @@
 # Pagrin Incentives Dashboard
 
-A modern dashboard for managing driver incentive campaigns and cashout redemptions built with Next.js 14, React 18, and TypeScript.
+A modern dashboard for managing Project incentive campaigns and cashout redemptions built with Next.js 14, React 18, and TypeScript.
 
 ## 🚀 Quick Start
 
@@ -142,7 +142,7 @@ interface Redemption {
 **Header**
 
 ```tsx
-<Header title="Campaigns" desc="Manage driver incentives" />
+<Header title="Campaigns" desc="Manage Project incentives" />
 ```
 
 **StatsCard**
